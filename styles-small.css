@@ -1,0 +1,77 @@
+/* Smaller Screens CSS */
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .social-links a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .social-links i {
+        font-size: 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .card .icon {
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .card button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    /* Video services page responsive styles */
+    .services, .pricing, .unique-value, .contact {
+        margin-bottom: 30px;
+    }
+
+    .services ul, .pricing ul, .unique-value ul {
+        padding-left: 10px;
+    }
+
+    .services li, .pricing li, .unique-value li {
+        padding-left: 15px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
