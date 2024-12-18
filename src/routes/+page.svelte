@@ -62,15 +62,32 @@ const currentYear = new Date().getFullYear();
     <!-- Hero Section -->
     <section class="relative bg-cover bg-center mt-8 md:mt-16 flex items-center justify-center">
       <div class="text-center text-white px-6">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Capturing the Present,<br /> Dreaming of the Future</h1>
-        <p class="text-lg mb-6">Welcome to my digital corner of creativity, exploration, and inspiration.</p>
+        <h1 
+          class="text-3xl md:text-5xl font-bold mb-4 opacity-0 animate-fadeInUp"
+          style="animation-delay: 0s;"
+        >
+          Capturing the Present,<br /> Dreaming of the Future
+        </h1>
+        <p 
+          class="text-lg mb-6 opacity-0 animate-fadeInUp"
+          style="animation-delay: 0.2s;"
+        >
+          Welcome to my digital corner of creativity, exploration, and inspiration.
+        </p>
       </div>
     </section>
   
     <!-- Social Links -->
-    <nav class="flex justify-center space-x-4 md:space-x-6">
+    <nav 
+      class="flex justify-center space-x-4 md:space-x-6 opacity-0 animate-fadeInUp"
+      style="animation-delay: 0.4s;"
+    >
       {#each socialLinks as link}
-        <a href={link.url} target="_blank" class="flex items-center space-x-1 text-sm md:text-lg {link.color} hover:opacity-80 transition">
+        <a 
+          href={link.url} 
+          target="_blank" 
+          class="flex items-center space-x-1 text-sm md:text-lg {link.color} hover:opacity-80 transition"
+        >
           <i class={link.icon}></i>
           <span class="font-medium">{link.label}</span>
         </a>
@@ -79,19 +96,26 @@ const currentYear = new Date().getFullYear();
   
     <!-- Card Section -->
     <section class="max-w-5xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {#each cards as card}
-        <div class="p-6 rounded-lg shadow-lg bg-neutral-800 text-white flex flex-col items-start">
+      {#each cards as card, i}
+        <div 
+          class="p-6 rounded-lg shadow-lg bg-neutral-800 text-white flex flex-col items-start opacity-0 animate-fadeInUp"
+          style="animation-delay: {i * 0.2 + 0.6}s;"
+        >
           <div class="w-12 h-12 flex items-center justify-center rounded-full mb-4 {card.color}">
             <i class="text-2xl text-white {card.icon}"></i>
           </div>
           <h2 class="text-xl font-bold mb-2">{card.title}</h2>
           <p class="text-neutral-400 mb-4">{card.description}</p>
-          <a href={card.url} target="_blank" class="inline-block mt-auto px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-500 transition">
+          <a 
+            href={card.url} 
+            target="_blank" 
+            class="inline-block mt-auto px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-500 transition"
+          >
             {card.buttonLabel}
           </a>
         </div>
       {/each}
-    </section>
+    </section>    
   
     <!-- Footer -->
     <footer class="mt-16 text-center text-neutral-400 text-sm">
