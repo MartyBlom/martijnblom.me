@@ -6,47 +6,56 @@
     ];
   
     const cards = [
-      { 
-        title: 'Life philosophy', 
-        description: 'Truly believe in the message of this video (not the sponsor lol)', 
-        icon: 'fas fa-heart', 
-        url: 'https://www.youtube.com/watch?v=BEB_uQ98SO4', 
-        buttonLabel: 'Watch', 
-        color: 'bg-red-600'
-      },
-      { 
-        title: 'Polarsteps', 
-        description: 'Follow me on all my trips!', 
-        icon: 'fas fa-compass', 
-        url: 'https://www.polarsteps.com/MARTlJN', 
-        buttonLabel: 'Follow me', 
-        color: 'bg-blue-500'
-      },
-      { 
-        title: 'Goodreads', 
-        description: 'Dive into my latest reads and book recommendations', 
-        icon: 'fab fa-goodreads', 
-        url: 'https://www.goodreads.com/user/show/111211739-martijn', 
-        buttonLabel: 'Click here', 
-        color: 'bg-yellow-600'
-      },
-      { 
-        title: 'Dreamy, shoegazey goodness', 
-        description: 'Want to listen to some dreamy shoegaze?', 
-        icon: 'fab fa-spotify', 
-        url: 'https://open.spotify.com/playlist/6zFKSqBDLZT0gu4ErpqXfE?si=dfae2240080243e6', 
-        buttonLabel: 'Click here', 
-        color: 'bg-green-500'
-      },
-      { 
-        title: 'Video Editing Services', 
-        description: 'Need some of your video content edited? I can help!', 
-        icon: 'fas fa-video', 
-        url: 'videoservices.html', 
-        buttonLabel: 'Learn more', 
-        color: 'bg-gray-600'
-      }
-    ];
+  { 
+    title: 'Life philosophy', 
+    description: 'Truly believe in the message of this video', 
+    icon: 'fas fa-heart', 
+    url: 'https://www.youtube.com/watch?v=BEB_uQ98SO4', 
+    buttonLabel: 'Watch', 
+    color: 'bg-red-600'
+  },
+  { 
+    title: 'Polarsteps', 
+    description: 'Follow me on all my trips!', 
+    icon: 'fas fa-compass', 
+    url: 'https://www.polarsteps.com/MARTlJN', 
+    buttonLabel: 'Follow me', 
+    color: 'bg-blue-500'
+  },
+  { 
+    title: 'Goodreads', 
+    description: 'Dive into my latest reads and book recommendations', 
+    icon: 'fab fa-goodreads', 
+    url: 'https://www.goodreads.com/user/show/111211739-martijn', 
+    buttonLabel: 'Click here', 
+    color: 'bg-yellow-600'
+  },
+  { 
+    title: 'Dreamy, shoegazey goodness', 
+    description: 'Want to listen to some dreamy shoegaze?', 
+    icon: 'fab fa-spotify', 
+    url: 'https://open.spotify.com/playlist/6zFKSqBDLZT0gu4ErpqXfE?si=dfae2240080243e6', 
+    buttonLabel: 'Click here', 
+    color: 'bg-green-500'
+  },
+  { 
+    title: 'Letterboxd', 
+    description: 'Check out my movie reviews and watchlist', 
+    icon: 'fas fa-film', 
+    url: 'https://letterboxd.com/martinifp', 
+    buttonLabel: 'Visit profile', 
+    color: 'bg-purple-600'
+  },
+  { 
+    title: 'Just Do', 
+    description: "A nice letter for when you're feeling stuck.", 
+    icon: 'fas fa-pen-fancy', 
+    url: 'https://youtu.be/VnSMIgsPj5M?si=g9q-Tu3G99fGv585', 
+    buttonLabel: 'Click here', 
+    color: 'bg-orange-500'
+  }
+];
+
   </script>
   
   <main class="min-h-screen bg-neutral-900 text-neutral-100 font-sans px-4">
