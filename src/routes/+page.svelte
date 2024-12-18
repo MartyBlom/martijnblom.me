@@ -55,12 +55,12 @@
     color: 'bg-orange-500'
   }
 ];
-
+const currentYear = new Date().getFullYear();
   </script>
   
   <main class="min-h-screen bg-neutral-900 text-neutral-100 font-sans px-4">
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center mt-20 flex items-center justify-center" style="background-image: url('https://source.unsplash.com/random/?creative');">
+    <section class="relative bg-cover bg-center mt-8 md:mt-16 flex items-center justify-center">
       <div class="text-center text-white px-6">
         <h1 class="text-3xl md:text-5xl font-bold mb-4">Capturing the Present,<br /> Dreaming of the Future</h1>
         <p class="text-lg mb-6">Welcome to my digital corner of creativity, exploration, and inspiration.</p>
@@ -95,7 +95,7 @@
   
     <!-- Footer -->
     <footer class="mt-16 text-center text-neutral-400 text-sm">
-      &copy; 2024 Martijn Blom. All Rights Reserved.
+      &copy; {currentYear} Martijn Blom. All Rights Reserved.
     </footer>
   </main>
   
