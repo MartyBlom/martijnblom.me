@@ -11,7 +11,7 @@
     description: 'Truly believe in the message of this video', 
     icon: 'fas fa-heart', 
     url: 'https://www.youtube.com/watch?v=BEB_uQ98SO4', 
-    buttonLabel: 'Watch', 
+    buttonLabel: 'Watch here', 
     color: 'bg-red-600'
   },
   { 
@@ -35,7 +35,7 @@
     description: 'Want to listen to some dreamy shoegaze?', 
     icon: 'fab fa-spotify', 
     url: 'https://open.spotify.com/playlist/6zFKSqBDLZT0gu4ErpqXfE?si=dfae2240080243e6', 
-    buttonLabel: 'Click here', 
+    buttonLabel: 'Listen here', 
     color: 'bg-green-500'
   },
   { 
@@ -43,7 +43,7 @@
     description: 'Check out my movie reviews and watchlist', 
     icon: 'fas fa-film', 
     url: 'https://letterboxd.com/martinifp', 
-    buttonLabel: 'Visit profile', 
+    buttonLabel: 'See my movie picks', 
     color: 'bg-purple-600'
   },
   { 
@@ -51,7 +51,7 @@
     description: "A nice letter for when you're feeling stuck.", 
     icon: 'fas fa-pen-fancy', 
     url: 'https://youtu.be/VnSMIgsPj5M?si=g9q-Tu3G99fGv585', 
-    buttonLabel: 'Click here', 
+    buttonLabel: 'Watch here', 
     color: 'bg-orange-500'
   }
 ];
@@ -63,16 +63,16 @@ const currentYear = new Date().getFullYear();
     <section class="relative bg-cover bg-center mt-8 md:mt-16 flex items-center justify-center">
       <div class="text-center text-white px-6">
         <h1 
-          class="text-3xl md:text-5xl font-bold mb-4 opacity-0 animate-fadeInUp"
+          class="max-w-xl text-3xl md:text-5xl font-bold mb-4 opacity-0 animate-fadeInUp"
           style="animation-delay: 0s;"
         >
-          Capturing the Present,<br /> Dreaming of the Future
+        Creating, building, and sharing what matters
         </h1>
         <p 
           class="text-lg mb-6 opacity-0 animate-fadeInUp"
           style="animation-delay: 0.2s;"
         >
-          Welcome to my digital corner of creativity, exploration, and inspiration.
+          Welcome to my digital garden.
         </p>
       </div>
     </section>
@@ -118,8 +118,11 @@ const currentYear = new Date().getFullYear();
     </section>    
   
     <!-- Footer -->
-    <footer class="mt-16 text-center text-neutral-400 text-sm">
-      &copy; {currentYear} Martijn Blom. All Rights Reserved.
-    </footer>
+  <footer 
+  class="mt-16 text-center text-neutral-400 text-sm opacity-0 animate-fadeInUp"
+  style="animation-delay: {0.6 + cards.length * 0.2}s;"
+>
+  &copy; {currentYear} Martijn Blom. All Rights Reserved.
+</footer>
   </main>
   
